@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const inventors = [
+            { first: 'Albert', last:'Einstein', year: 1879,passed:1995},
+            { first: 'Isaac', last:'Newton', year: 1646,passed:1727},
+            { first: 'Galileo', last:'Galilei', year: 1564,passed:1642},
+            { first: 'Marie', last:'Curie', year: 1867,passed:1934},
+            { first: 'Johannes', last:'Kepler', year: 1571, passed:1630},
+            { first: 'Nicolaus', last:'Copernicus', year: 1473,passed:1543},
+            { first: 'Max', last:'Plack', year: 1858,passed:1947},
+        ];
+
+        const people = ['Bleck, Glenn','Backer, Carl', 'Backett, Samuel','Beddoes, Mick','Beecher,Henry','Begin, Manachen',
+        'Bellock, Hilarie','Bellow, Saul','Benchley, Robert','Benenson, Peter','Ben-Gurion, David' ];
+
+//         const fifteen = inventors.filter(inventors => {
+//             if(inventor.year >= 1500 && inventor.year < 1600 ){
+//                 return true;
+//             }
+//         });
+// console.table(fifteen);
+
+//         const fullName = inventors.map(inventors => `${inventors.first} ${inventors.last}`);
+//         console.log(fullName);
+
+
+        // const ordered = inventors.sort(function(a, b){
+        //     if(a.year > b.year){
+        //         return 1;
+        //     }else{
+        //         return -1;
+        //     }
+        // });
+        // console.log(ordered);
+
+
+        // const ordered1 = inventors.sort((a,b) => a.year > b.year ? 1 : -1);
+        // console.log(ordered1);
+
+
+        const ordered = inventors.sort((a, b) => a.year > b.year ? 1 : -1);
+        console.table(ordered);
+
+
+        // const totalYear = inventors.reduce((total, inventors) => {
+        //     return total + (inventors.passed - inventors.year);
+        // }, 0 );
+        // console.log(totalYear);
+
+        // const oldest =inventors.sort(function(a,b){
+        //     const lastGuy = a.passed - a.year;
+        //     const nextGuy = a.passed - a.year;
+        //     return lastGuy > nextGuy ? -1 : 1
+        //     if(lastGuy > nextGuy){
+        //         return -1;
+        //     }else{
+        //         return 1;
+        //     }
+        // });
+
+        // console.table(oldest);
+
+        // const category = document.querySelector('.tfa-recent');
+        // const links = Array.from.querySelectorAll('a');
+
+        // const de = links
+        // .map(links => links.textContent)  
+        // .filter(streetName => streetName.include('de'));
+
+        // const alpha = people.sort(function(lastOne, nextOne){
+        //     const [aLast, aFirst] = lastOne.split(',');
+        //     const [bLast, bFirst] =nextOne.split(',');
+        //     return aLast > bLast ? 1 : -1 ;
+        // });
+        // console.log(alpha)
+
+        // const data = ['car','car','truck','bike','walk','car','van','bike','walk','car','van','car','truck']
+
+        // const transportation = data.reduce(function(obj, item){
+        //     if(!obj[item]) {
+        //         obj[item] = 0;
+        //     }
+        //     obj[item]++;
+        //     return obj
+        // },{})
+        // console.log(transportation) 
+
+    </script>
+</body>
+</html>
